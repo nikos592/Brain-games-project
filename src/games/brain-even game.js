@@ -1,4 +1,4 @@
-import { gameProcess } from '../index.js';
+import gameProcess from '../index.js';
 
 const isTheNumberEven = (number) => number % 2 === 0;
 
@@ -14,4 +14,4 @@ const gameBrainEven = () => {
   gameProcess(getQuestionAndAnswer, description);
 };
 
-export default gameBrainEven ;
+export default gameBrainEven;

@@ -1,4 +1,4 @@
-import { gameProcess } from '../index.js';
+import gameProcess from '../index.js';
 
 const amountOfElementsProgression = 10;
 
