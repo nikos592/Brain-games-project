@@ -1,22 +1,39 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "Hexlet project by nikos592",
+  "type": "module",
+  "description": "[![Actions Status](https://github.com/nikos592/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nikos592/frontend-project-44/actions)",
   "main": "index.js",
-  "bin": {
-    "code": "bin/brain-games.js"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/nikos592/frontend-project-44.git"
+    "url": "git+https://github.com/nikos592/frontend-project-44.git"
   },
-  "author": "nikos592",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nikos592/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/nikos592/frontend-project-44#readme"
+  "homepage": "https://github.com/nikos592/frontend-project-44#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "readline-sync": "^1.4.10"
+  },
+  "bin": {
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "eslint": "^9.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "globals": "^15.3.0"
+  }
 }
