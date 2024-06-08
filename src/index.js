@@ -10,7 +10,7 @@ export const gameProcess = (getQuestionAndAnswer, description) => {
     const [question, correctAnswer] = getQuestionAndAnswer();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer === correctAnswer) {
+    if (userAnswer == correctAnswer) {
       console.log('Correct!');
       i += 1;
     } else {
