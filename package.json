@@ -19,6 +19,7 @@
   "homepage": "https://github.com/nikos592/frontend-project-44#readme",
   "dependencies": {
     "express": "^4.19.2",
+    "mathjs": "^13.0.0",
     "readline-sync": "^1.4.10"
   },
   "bin": {
