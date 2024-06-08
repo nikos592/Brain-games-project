@@ -31,6 +31,8 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export const gameBrainCalc = () => {
+const gameBrainCalc = () => {
   gameProcess(getQuestionAndAnswer, description);
 };
+
+export default gameBrainCalc;

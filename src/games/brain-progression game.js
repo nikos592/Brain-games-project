@@ -27,6 +27,8 @@ const getQuestionAndAnswer = () => {
   return [question, String(correctAnswer)];
 };
 
-export const gameBrainProgression = () => {
+const gameBrainProgression = () => {
   gameProcess(getQuestionAndAnswer, description);
 };
+
+export default gameBrainProgression;

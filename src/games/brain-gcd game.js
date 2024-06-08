@@ -23,6 +23,8 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export const gameBrainGcd = () => {
+const gameBrainGcd = () => {
   gameProcess(getQuestionAndAnswer, description);
-}
+};
+
+export default gameBrainGcd;

@@ -1,29 +1,29 @@
-import {
-    gameProcess
-} from '../index.js';
+import { gameProcess } from '../index.js';
 
 const isPrime = (number) => {
-    if (number <= 1) {
-        return false;
+  if (number <= 1) {
+    return false;
+  }
+  
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return false;
     }
+  }
 
-    for (let i = 2; i <= Math.sqrt(number); i++) {
-        if (number % i === 0) {
-            return false;
-        }
-    }
-
-    return true;
+  return true;
 };
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
 const getQuestionAndAnswer = () => {
-    const question = Math.floor(Math.random() * 100);
-    const correctAnswer = isPrime(question) ? 'yes' : 'no';
-    return [question, correctAnswer];
+  const question = Math.floor(Math.random() * 100);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
+  return [question, correctAnswer];
 };
 
-export const gameBrainPrime = () => {
-    gameProcess(getQuestionAndAnswer, description);
+const gameBrainPrime = () => {
+  gameProcess(getQuestionAndAnswer, description);
 };
+
+export default gameBrainPrime;

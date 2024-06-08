@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-import { greetingUser } from '../src/cli.js';
+import greeting from '../src/cli.js';
+
+greeting();

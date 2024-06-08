@@ -10,6 +10,8 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export const gameBrainEven = () => {
+const gameBrainEven = () => {
   gameProcess(getQuestionAndAnswer, description);
-}
+};
+
+export default gameBrainEven ;
