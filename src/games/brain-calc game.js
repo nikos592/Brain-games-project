@@ -1,4 +1,4 @@
-import { gameProcess } from '/home/nikos/frontend-project-44/src/index.js';
+import { gameProcess } from '../index.js';
 import { evaluate } from 'mathjs';
 
 const getRandomExpression = () => {

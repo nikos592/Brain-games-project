@@ -1,4 +1,4 @@
-import { gameProcess } from '/home/nikos/frontend-project-44/src/index.js';
+import { gameProcess } from '../index.js';
 
 const getArithmeticProgression = (initialValue, denominator, amountOfElements) => {
     let arr = [];
