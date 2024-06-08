@@ -1,0 +1,22 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "Hexlet project by nikos592",
+  "main": "index.js",
+  "bin": {
+    "code": "bin/brain-games.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nikos592/frontend-project-44.git"
+  },
+  "author": "nikos592",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikos592/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/nikos592/frontend-project-44#readme"
+}
