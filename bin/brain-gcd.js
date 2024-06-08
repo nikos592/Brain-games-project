@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import {
-	gameBrainGcd
+    gameBrainGcd,
 } from '../src/games/brain-gcd game.js';
+
 gameBrainGcd();

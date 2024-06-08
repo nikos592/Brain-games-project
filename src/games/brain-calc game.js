@@ -1,6 +1,5 @@
 import { gameProcess } from '../index.js';
 
-
 const description = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 const minRange = 0;
@@ -18,6 +17,7 @@ const calculate = (x, y, operator) => {
       throw new Error(`There is no such operator like '${operator}'!`);
   }
 };
+
 const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const getRandomIndex = (data) => Math.floor(Math.random() * data.length);
@@ -31,4 +31,6 @@ const getQuestionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export const gameBrainCalc = () => {gameProcess(getQuestionAndAnswer,description)};
+export const gameBrainCalc = () => {
+  gameProcess(getQuestionAndAnswer, description);
+};

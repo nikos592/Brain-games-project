@@ -1,38 +1,32 @@
-import {
-	gameProcess
-} from '../index.js';
-
-const rand = (min, max) => {
-	Math.floor(Math.random() * (max - min + 1)) + min
-};
+import { gameProcess } from '../index.js';
 
 const amountOfElementsProgression = 10;
 
 const createProgression = (initialValue, denominator) => {
-	const arr = [];
+  const arr = [];
 
-	for (let i = 0; i < amountOfElementsProgression; i += 1) {
-		arr.push(initialValue + denominator * i);
-	}
-	return arr;
+  for (let i = 0; i < amountOfElementsProgression; i += 1) {
+    arr.push(initialValue + denominator * i);
+  }
+  return arr;
 };
 
 const description = 'What number is missing in the progression?';
 
 const getQuestionAndAnswer = () => {
-	const initialValue = Math.floor(Math.random() * 100);
-	const denominator = Math.floor(Math.random() * 10);
-	const progression = createProgression(initialValue, denominator);
+  const initialValue = Math.floor(Math.random() * 100);
+  const denominator = Math.floor(Math.random() * 10);
+  const progression = createProgression(initialValue, denominator);
 
-	const hiddenIndex = Math.floor(Math.random() * amountOfElementsProgression);
-	const correctAnswer = progression[hiddenIndex];
-	progression[hiddenIndex] = '..';
+  const hiddenIndex = Math.floor(Math.random() * amountOfElementsProgression);
+  const correctAnswer = progression[hiddenIndex];
+  progression[hiddenIndex] = '..';
 
-	const question = progression.join(' ');
+  const question = progression.join(' ');
 
-	return [question, String(correctAnswer)];
+  return [question, String(correctAnswer)];
 };
 
 export const gameBrainProgression = () => {
-	gameProcess(getQuestionAndAnswer, description);
+  gameProcess(getQuestionAndAnswer, description);
 };
