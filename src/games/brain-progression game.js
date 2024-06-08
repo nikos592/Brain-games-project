@@ -1,25 +1,16 @@
 import { gameProcess } from '../index.js';
 
-const getArithmeticProgression = (initialValue, denominator, amountOfElements) => {
-    let arr = [];
-    let randomIndex = Math.floor(Math.random() * amountOfElements);
+const rand = (min, max) => {Math.floor(Math.random() * (max - min + 1)) + min};
 
-    for (let i = 0; i < amountOfElements; i++) {
-        if (i === randomIndex) {
-            arr.push('..');
-        } else {
-            arr.push(initialValue + i * denominator);
-        }
-    }
+const amountOfElementsProgression = 10;
 
-    return arr;
-};
+const createProgression = (initialValue, denominator) => {
+  const arr = [];
 
-const returnMissingValue = (arr, initialValue, commonDifference) => {
-    let missingIndex = arr.findIndex(el => el === '..');
-    let missingValue = initialValue + missingIndex * commonDifference;
-
-    return missingValue;
+  for (let i = 0; i < amountOfElementsProgression; i += 1) {
+    arr.push(initialValue + denominator * i);
+  }
+  return arr;
 };
 
 const description = 'What number is missing in the progression?';
@@ -27,10 +18,15 @@ const description = 'What number is missing in the progression?';
 const getQuestionAndAnswer = () => {
     const initialValue = Math.floor(Math.random() * 100);
     const denominator = Math.floor(Math.random() * 10);
-    const amountOfElements = 10;
-    const question = getArithmeticProgression(initialValue, denominator, amountOfElements);
-    const correctAnswer = returnMissingValue(question, initialValue, denominator);
-    return [question, correctAnswer];
+    const progression = createProgression(initialValue, denominator);
+    
+    const hiddenIndex = Math.floor(Math.random() * amountOfElementsProgression);
+    const correctAnswer = progression[hiddenIndex];
+    progression[hiddenIndex] = '..';
+    
+    const question = progression.join(' ');
+    
+    return [question, String(correctAnswer)];
 };
 
 export const gameBrainProgression = () => {
