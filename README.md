@@ -1,2 +1,21 @@
+### Description
+Проект "Игры Разума" представляет собой комплект из пяти математических консольных игр, предназначенных для тренировки вашего ума. В каждой из игр пользователю задаются три вопроса, и в случае правильного ответа на все вопросы игра считается успешно завершенной. В случае неправильного ответа игра предложит начать прохождение заново.
+
+### Games
+    brain-even - пользователю необходимо определить является ли число четным.
+    brain-calc - пользователю необходимо вычислить математическое выражение.
+    brain-gcd -пользователю необходимо найти наибольший общий делитель для двух представленных чисел.
+    brain-progression - пользователю необходимо найти пропущенное число в прогрессии.
+    brain-prime - пользователю необходимо определить является ли число простым.
+
+### Demonstration
+https://asciinema.org/a/nFkOqucomUMrfTb54qEuDXBrH
+
+### Setup
+npm ci
+npx eslint
+https://asciinema.org/a/o6v8WsmEfLf6Zt7UqI1UU1A7h
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/nikos592/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nikos592/frontend-project-44/actions)
+
