@@ -19,3 +19,6 @@ https://asciinema.org/a/o6v8WsmEfLf6Zt7UqI1UU1A7h
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/nikos592/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nikos592/frontend-project-44/actions)
 
+### CodeClimate status:
+[![Maintainability](https://api.codeclimate.com/v1/badges/7b792182a161bf2f8a06/maintainability)](https://codeclimate.com/github/nikos592/frontend-project-44/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/7b792182a161bf2f8a06/test_coverage)](https://codeclimate.com/github/nikos592/frontend-project-44/test_coverage)
