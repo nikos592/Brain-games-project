@@ -12,8 +12,11 @@
 https://asciinema.org/a/nFkOqucomUMrfTb54qEuDXBrH
 
 ### Setup
+```
 npm ci
+```
 npx eslint
+```
 https://asciinema.org/a/o6v8WsmEfLf6Zt7UqI1UU1A7h
 
 ### Hexlet tests and linter status:
@@ -21,4 +24,6 @@ https://asciinema.org/a/o6v8WsmEfLf6Zt7UqI1UU1A7h
 
 ### CodeClimate status:
 [![Maintainability](https://api.codeclimate.com/v1/badges/7b792182a161bf2f8a06/maintainability)](https://codeclimate.com/github/nikos592/frontend-project-44/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/7b792182a161bf2f8a06/test_coverage)](https://codeclimate.com/github/nikos592/frontend-project-44/test_coverage)
+
+### Linter status:
+[![ESLint](https://img.shields.io/badge/ESLint-Passed-brightgreen)](https://eslint.org/)

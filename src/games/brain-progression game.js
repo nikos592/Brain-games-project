@@ -1,4 +1,5 @@
-import gameProcess from '../index.js';
+import startGameProcess from '../index.js';
+import getRandomValue from '../get random.js';
 
 const amountOfElementsProgression = 10;
 
@@ -14,8 +15,8 @@ const createProgression = (initialValue, denominator) => {
 const description = 'What number is missing in the progression?';
 
 const getQuestionAndAnswer = () => {
-  const initialValue = Math.floor(Math.random() * 100);
-  const denominator = Math.floor(Math.random() * 10);
+  const initialValue = getRandomValue();
+  const denominator = getRandomValue();
   const progression = createProgression(initialValue, denominator);
 
   const hiddenIndex = Math.floor(Math.random() * amountOfElementsProgression);
@@ -27,8 +28,8 @@ const getQuestionAndAnswer = () => {
   return [question, String(correctAnswer)];
 };
 
-const gameBrainProgression = () => {
-  gameProcess(getQuestionAndAnswer, description);
+const playBrainProgression = () => {
+  startGameProcess(getQuestionAndAnswer, description);
 };
 
-export default gameBrainProgression;
+export default playBrainProgression;

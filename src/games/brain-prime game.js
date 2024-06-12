@@ -1,4 +1,5 @@
-import gameProcess from '../index.js';
+import startGameProcess from '../index.js';
+import getRandomValue from '../get random.js';
 
 const isPrime = (number) => {
   if (number <= 1) {
@@ -16,13 +17,13 @@ const isPrime = (number) => {
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
 const getQuestionAndAnswer = () => {
-  const question = Math.floor(Math.random() * 100);
+  const question = getRandomValue();
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-const gameBrainPrime = () => {
-  gameProcess(getQuestionAndAnswer, description);
+const playBrainPrime = () => {
+  startGameProcess(getQuestionAndAnswer, description);
 };
 
-export default gameBrainPrime;
+export default playBrainPrime;
