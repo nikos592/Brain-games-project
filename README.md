@@ -15,7 +15,7 @@ https://asciinema.org/a/nFkOqucomUMrfTb54qEuDXBrH
 ```
 npm ci
 ```
-https://asciinema.org/a/o6v8WsmEfLf6Zt7UqI1UU1A7h
+https://asciinema.org/a/8hwsInfzJHVeGdZ94e85w9rHq
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/nikos592/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/nikos592/frontend-project-44/actions)
