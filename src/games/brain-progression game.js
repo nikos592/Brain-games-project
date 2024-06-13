@@ -1,5 +1,5 @@
 import startGameProcess from '../index.js';
-import getRandomValue from '../get random.js';
+import getRandomValue from '../getRandom.js';
 
 const amountOfElementsProgression = 10;
 

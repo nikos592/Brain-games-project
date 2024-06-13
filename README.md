@@ -15,9 +15,6 @@ https://asciinema.org/a/nFkOqucomUMrfTb54qEuDXBrH
 ```
 npm ci
 ```
-```
-npx eslint
-```
 https://asciinema.org/a/o6v8WsmEfLf6Zt7UqI1UU1A7h
 
 ### Hexlet tests and linter status:

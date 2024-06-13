@@ -1,5 +1,5 @@
 import startGameProcess from '../index.js';
-import getRandomValue from '../get random.js';
+import getRandomValue from '../getRandom.js';
 
 const description = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
@@ -20,9 +20,10 @@ const calculate = (x, y, operator) => {
 const getQuestionAndAnswer = () => {
   const number1 = getRandomValue();
   const number2 = getRandomValue();
-  const operator = getRandomValue(operators);
-  const question = `${number1} ${operator} ${number2}`;
-  const correctAnswer = calculate(number1, number2, operator).toString();
+  const operatorIndex = getRandomValue(0, operators.length - 1);
+  const selectSign = operators[operatorIndex];
+  const question = `${number1} ${selectSign} ${number2}`;
+  const correctAnswer = calculate(number1, number2, selectSign).toString();
   return [question, correctAnswer];
 };
 
